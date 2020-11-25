@@ -120,10 +120,6 @@ export default class ModalBox extends React.PureComponent {
 
     // Needed for iOS because the keyboard covers the screen
     if (Platform.OS === 'ios') {
-      this.subscriptions = [
-        Keyboard.addListener('keyboardWillChangeFrame', this.onKeyboardChange),
-        Keyboard.addListener('keyboardDidHide', this.onKeyboardHide)
-      ];
     }
   }
 
